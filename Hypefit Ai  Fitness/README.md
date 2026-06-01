@@ -40,25 +40,14 @@ HYPEFIT adalah aplikasi web bertema AI Fitness / Smart Fitness Hub dengan visual
 |   |-- App.jsx
 |   |-- main.jsx
 |   `-- styles.css
-`-- stitch_fitbot_smart_fitness_hub/
-    |-- hyperion_ai_fitness_app/
-    |-- hyperion_fit_athlete_enrollment/
-    |-- hyperion_fit_enrollment_success/
-    |-- hyperion_ai_member_dashboard/
-    |-- hyperion_ai_workouts_library/
-    |-- hyperion_ai_nutrition_management/
-    |-- hyperion_ai_settings_profile/
-    `-- kinetic_ai/DESIGN.md
 ```
-
-Folder `stitch_fitbot_smart_fitness_hub/` di dalam root tetap menyimpan aset desain asli dari ZIP sebagai referensi.
 
 ## Setup Project
 
 1. Buka folder project:
 
 ```bash
-cd "c:\Users\csdec\Documents\capstone project\capstone\stitch_fitbot_smart_fitness_hub"
+cd "c:\Users\csdec\Documents\capstone project\capstone\Hypefit Ai  Fitness"
 ```
 
 2. Install dependency:

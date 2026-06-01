@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" run dev",
-    "build": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" run build",
-    "start": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" start",
-    "install:app": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" install"
+    "dev": "npm --prefix \"Hypefit Ai  Fitness\" run dev",
+    "build": "npm --prefix \"Hypefit Ai  Fitness\" run build",
+    "start": "npm --prefix \"Hypefit Ai  Fitness\" start",
+    "install:app": "npm --prefix \"Hypefit Ai  Fitness\" install"
   }
 }
