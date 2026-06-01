@@ -9,6 +9,7 @@ HYPEFIT adalah aplikasi web AI Fitness / Smart Fitness Hub dengan visual dark fu
 - Login demo lokal.
 - Dashboard member setelah login.
 - Page aktif: Dashboard, Training, Nutrition, Settings.
+- BMI Calculation Module untuk menghitung BMI dari tinggi dan berat badan.
 - Pricing plan: Lite, Pro, Elite.
 - Flow enrollment: pilih paket -> Athlete Enrollment -> Enrollment Successful.
 - Logo dan favicon HYPEFIT custom.

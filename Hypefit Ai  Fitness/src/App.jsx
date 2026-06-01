@@ -986,6 +986,132 @@ function DashboardCard({ title, value, meta, icon, tone = "primary" }) {
   );
 }
 
+function BmiCalculationModule() {
+  const [height, setHeight] = useState("170");
+  const [weight, setWeight] = useState("70");
+
+  const heightNumber = Number.parseFloat(height);
+  const weightNumber = Number.parseFloat(weight);
+  const hasValidInput = heightNumber > 0 && weightNumber > 0;
+  const bmi = hasValidInput ? weightNumber / (heightNumber / 100) ** 2 : 0;
+  const roundedBmi = hasValidInput ? bmi.toFixed(1) : "--";
+
+  let category = "Masukkan data";
+  let categoryTone = "text-on-surface-variant";
+  let recommendation = "Isi tinggi dan berat badan untuk melihat estimasi BMI Anda.";
+
+  if (hasValidInput) {
+    if (bmi < 18.5) {
+      category = "Underweight";
+      categoryTone = "text-yellow-300";
+      recommendation = "Fokus pada surplus kalori ringan, protein cukup, dan strength training progresif.";
+    } else if (bmi < 25) {
+      category = "Normal";
+      categoryTone = "text-green-400";
+      recommendation = "Pertahankan pola latihan, tidur cukup, hidrasi, dan nutrisi seimbang.";
+    } else {
+      category = "Overweight";
+      categoryTone = "text-primary";
+      recommendation = "Prioritaskan defisit kalori kecil, latihan beban, dan cardio low impact secara konsisten.";
+    }
+  }
+
+  const indicatorPosition = hasValidInput ? Math.min(Math.max(((bmi - 15) / 20) * 100, 0), 100) : 0;
+
+  return (
+    <article className="glass-panel relative overflow-hidden p-6 shadow-panel-glow">
+      <div className="scan-line" />
+      <CornerMarks />
+      <div className="relative z-10 grid gap-8 xl:grid-cols-[0.95fr_1.05fr] xl:items-center">
+        <div>
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary-container/10 px-3 py-1 font-mono text-[10px] font-bold uppercase text-primary">
+            <Icon name="straighten" className="text-sm" />
+            BMI Calculation Module
+          </div>
+          <h3 className="font-headline text-3xl uppercase text-ui-silver">Body Index Scan</h3>
+          <p className="mt-3 max-w-xl font-body text-sm leading-6 text-on-surface-variant">
+            Hitung BMI berdasarkan tinggi dan berat badan untuk membaca kategori tubuh secara cepat. BMI adalah indikator
+            umum, bukan diagnosis medis.
+          </p>
+        </div>
+
+        <div className="grid gap-5 lg:grid-cols-[1fr_0.95fr]">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+            <label className="block">
+              <span className="mb-2 block font-mono text-[10px] font-bold uppercase text-on-surface-variant">
+                Height / CM
+              </span>
+              <div className="flex items-center border border-white/10 bg-surface/70 focus-within:border-primary focus-within:shadow-red-glow">
+                <input
+                  type="number"
+                  min="1"
+                  value={height}
+                  onChange={(event) => setHeight(event.target.value)}
+                  className="min-h-14 w-full bg-transparent px-4 font-mono text-2xl font-bold text-ui-silver outline-none"
+                  aria-label="Height in centimeters"
+                />
+                <span className="pr-4 font-mono text-xs font-bold uppercase text-primary">CM</span>
+              </div>
+            </label>
+
+            <label className="block">
+              <span className="mb-2 block font-mono text-[10px] font-bold uppercase text-on-surface-variant">
+                Weight / KG
+              </span>
+              <div className="flex items-center border border-white/10 bg-surface/70 focus-within:border-primary focus-within:shadow-red-glow">
+                <input
+                  type="number"
+                  min="1"
+                  value={weight}
+                  onChange={(event) => setWeight(event.target.value)}
+                  className="min-h-14 w-full bg-transparent px-4 font-mono text-2xl font-bold text-ui-silver outline-none"
+                  aria-label="Weight in kilograms"
+                />
+                <span className="pr-4 font-mono text-xs font-bold uppercase text-primary">KG</span>
+              </div>
+            </label>
+          </div>
+
+          <div className="border border-white/10 bg-surface/70 p-5">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <div className="font-mono text-[10px] font-bold uppercase text-on-surface-variant">BMI Score</div>
+                <div className="mt-2 font-mono text-5xl font-bold leading-none text-ui-silver">{roundedBmi}</div>
+              </div>
+              <div className={`border border-white/10 bg-surface-container px-3 py-2 text-right font-mono text-[10px] font-bold uppercase ${categoryTone}`}>
+                {category}
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <div className="relative h-3 overflow-hidden bg-white/10">
+                <div className="absolute inset-y-0 left-0 w-[28%] bg-yellow-300/70" />
+                <div className="absolute inset-y-0 left-[28%] w-[32%] bg-green-500/70" />
+                <div className="absolute inset-y-0 left-[60%] right-0 bg-primary/80" />
+                {hasValidInput ? (
+                  <div
+                    className="absolute -top-1 h-5 w-1 bg-white shadow-[0_0_14px_rgba(255,255,255,0.72)]"
+                    style={{ left: `${indicatorPosition}%` }}
+                  />
+                ) : null}
+              </div>
+              <div className="mt-2 flex justify-between font-mono text-[9px] uppercase text-on-surface-variant">
+                <span>Under</span>
+                <span>Normal</span>
+                <span>Over</span>
+              </div>
+            </div>
+
+            <p className="mt-5 border-l-2 border-primary bg-surface-container/70 p-4 font-body text-sm leading-6 text-on-surface-variant">
+              {recommendation}
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 function DashboardOverview({ onAskFitBot }) {
   return (
     <section className="relative z-10 mx-auto max-w-[1440px] space-y-8 px-margin-mobile py-8 lg:px-margin-desktop">
@@ -1017,6 +1143,8 @@ function DashboardOverview({ onAskFitBot }) {
         <DashboardCard title="Recovery Score" value="72" meta="Tidur 7j 10m, HRV stabil" icon="bolt" />
         <DashboardCard title="Protein Intake" value="118g" meta="Sisa 32g dari target" icon="restaurant" tone="red" />
       </div>
+
+      <BmiCalculationModule />
 
       <div className="grid grid-cols-1 gap-gutter xl:grid-cols-[1.35fr_0.65fr]">
         <article className="relative border border-white/10 bg-surface-container p-6">
@@ -1363,7 +1491,7 @@ function SettingsPage() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <label>
                 <span className="mb-3 block font-mono text-xs uppercase text-on-surface-variant">Athlete Identity</span>
-                <input className="w-full border border-white/10 bg-surface p-4 font-body text-lg outline-none focus:border-primary" defaultValue="Marcus Sterling" />
+                <input className="w-full border border-white/10 bg-surface p-4 font-body text-lg outline-none focus:border-primary" defaultValue="ahmad daffa" />
               </label>
               <div>
                 <div className="mb-3 font-mono text-xs uppercase text-on-surface-variant">System ID Immutable</div>
