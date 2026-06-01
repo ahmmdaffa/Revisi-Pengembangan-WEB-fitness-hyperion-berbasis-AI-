@@ -1,0 +1,11 @@
+{
+  "name": "hypefit-capstone-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" run dev",
+    "build": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" run build",
+    "start": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" start",
+    "install:app": "npm --prefix \"stitch_fitbot_smart_fitness_hub\" install"
+  }
+}

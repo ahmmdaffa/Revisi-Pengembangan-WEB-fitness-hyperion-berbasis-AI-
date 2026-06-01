@@ -1,0 +1,142 @@
+/* Keeps long FitBot conversations inside a fixed-height, premium glass panel. */
+html body .fitbot-shell {
+  min-height: 0 !important;
+  height: min(82vh, 740px) !important;
+  max-height: calc(100vh - 132px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+html body .fitbot-shell .chat-scroll {
+  min-height: 0 !important;
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  scroll-behavior: smooth !important;
+  padding-right: 1.45rem !important;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(186, 11, 11, 0.72) rgba(255, 255, 255, 0.06);
+}
+
+html body .fitbot-shell .chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+html body .fitbot-shell .chat-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.055);
+  border-radius: 999px;
+}
+
+html body .fitbot-shell .chat-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(186, 11, 11, 0.92), rgba(115, 29, 23, 0.82));
+  border: 2px solid rgba(18, 20, 20, 0.92);
+  border-radius: 999px;
+}
+
+html body .fitbot-shell .chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(228, 47, 36, 0.96), rgba(186, 11, 11, 0.9));
+}
+
+html body .fitbot-shell > .grid,
+html body .fitbot-shell > form {
+  flex: 0 0 auto !important;
+}
+
+html body .chatbot-panel,
+html body .fitbot-panel,
+html body .chat-window,
+html body .fitbot-window {
+  height: min(82vh, 740px) !important;
+  max-height: calc(100vh - 132px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+html body .chatbot-body,
+html body .fitbot-body,
+html body .chat-window-body,
+html body .fitbot-window-body {
+  min-height: 0 !important;
+  flex: 1 1 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+html body .chatbot-messages,
+html body .fitbot-messages,
+html body .chat-messages,
+html body .fitbot-chat-messages {
+  min-height: 0 !important;
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  scroll-behavior: smooth !important;
+  padding-right: 10px !important;
+  padding-bottom: 18px !important;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(186, 11, 11, 0.72) rgba(255, 255, 255, 0.06);
+}
+
+html body .chatbot-messages::-webkit-scrollbar,
+html body .fitbot-messages::-webkit-scrollbar,
+html body .chat-messages::-webkit-scrollbar,
+html body .fitbot-chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+html body .chatbot-messages::-webkit-scrollbar-track,
+html body .fitbot-messages::-webkit-scrollbar-track,
+html body .chat-messages::-webkit-scrollbar-track,
+html body .fitbot-chat-messages::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.055);
+  border-radius: 999px;
+}
+
+html body .chatbot-messages::-webkit-scrollbar-thumb,
+html body .fitbot-messages::-webkit-scrollbar-thumb,
+html body .chat-messages::-webkit-scrollbar-thumb,
+html body .fitbot-chat-messages::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(186, 11, 11, 0.92), rgba(115, 29, 23, 0.82));
+  border: 2px solid rgba(18, 20, 20, 0.92);
+  border-radius: 999px;
+}
+
+html body .chatbot-messages::-webkit-scrollbar-thumb:hover,
+html body .fitbot-messages::-webkit-scrollbar-thumb:hover,
+html body .chat-messages::-webkit-scrollbar-thumb:hover,
+html body .fitbot-chat-messages::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(228, 47, 36, 0.96), rgba(186, 11, 11, 0.9));
+}
+
+html body .chatbot-suggestions,
+html body .fitbot-suggestions,
+html body .chat-suggestions {
+  flex: 0 0 auto !important;
+}
+
+html body .chatbot-input-row,
+html body .fitbot-input-row,
+html body .chat-input-row {
+  flex: 0 0 auto !important;
+}
+
+@media (max-width: 720px) {
+  html body .fitbot-shell {
+    height: min(78vh, 680px) !important;
+    max-height: calc(100vh - 104px) !important;
+  }
+
+  html body .chatbot-panel,
+  html body .fitbot-panel,
+  html body .chat-window,
+  html body .fitbot-window {
+    width: calc(100vw - 24px) !important;
+    height: min(78vh, 680px) !important;
+    max-height: calc(100vh - 104px) !important;
+  }
+}

@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #e2e2e2;
+  background: #121414;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(186, 11, 11, 0.14), transparent 28rem),
+    linear-gradient(180deg, #121414 0%, #1a1a1a 100%);
+  color: #e2e2e2;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+a,
+input,
+textarea {
+  border-radius: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.material-symbols-outlined {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.glass-panel {
+  background: rgba(44, 44, 44, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ba0b0b, transparent);
+  animation: scan 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+.corner-mark {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: #ba0b0b;
+  pointer-events: none;
+}
+
+.corner-tl {
+  top: 0;
+  left: 0;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+.corner-tr {
+  top: 0;
+  right: 0;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+
+.corner-bl {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+}
+
+.corner-br {
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background: #ba0b0b;
+  animation: blink 0.9s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  46%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(186, 11, 11, 0.8) rgba(255, 255, 255, 0.06);
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: rgba(186, 11, 11, 0.8);
+}
+
+.message-text {
+  overflow-wrap: anywhere;
+}
+
+.nav-logo-button {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  background: rgba(18, 20, 20, 0.68);
+  box-shadow: inset 0 0 0 1px rgba(186, 11, 11, 0.12);
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.nav-logo-button:hover {
+  border-color: rgba(186, 11, 11, 0.58);
+  box-shadow:
+    inset 0 0 0 1px rgba(186, 11, 11, 0.22),
+    0 0 24px rgba(186, 11, 11, 0.18);
+  transform: scale(1.04);
+}
+
+.nav-login-button {
+  min-width: 108px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 24px rgba(186, 11, 11, 0.22);
+}
+
+.fitbot-shell {
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(44, 44, 44, 0.88), rgba(18, 20, 20, 0.94)),
+    rgba(44, 44, 44, 0.72);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.5),
+    0 0 42px rgba(186, 11, 11, 0.16);
+}
+
+.fitbot-chat-header {
+  background: rgba(18, 20, 20, 0.48);
+}
+
+.fitbot-icon-box,
+.fitbot-preview-icon {
+  border-radius: 14px;
+}
+
+.fitbot-send {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 16px;
+  transform: translateY(-50%);
+}
+
+.fitbot-send:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.fitbot-send:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.fitbot-preview {
+  position: relative;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 22px 22px 8px 22px;
+  background:
+    linear-gradient(145deg, rgba(48, 48, 48, 0.94), rgba(25, 27, 27, 0.94)),
+    rgba(44, 44, 44, 0.88);
+  box-shadow:
+    0 18px 44px rgba(0, 0, 0, 0.42),
+    0 0 30px rgba(186, 11, 11, 0.15);
+  backdrop-filter: blur(16px);
+}
+
+.fitbot-preview::after {
+  position: absolute;
+  right: 24px;
+  bottom: -8px;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: rgba(25, 27, 27, 0.96);
+  border-right: 1px solid rgba(255, 255, 255, 0.11);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  transform: rotate(45deg);
+}
+
+.fitbot-preview-icon {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(186, 11, 11, 0.18);
+  color: #ffb4a9;
+}
+
+.fitbot-orb {
+  border-radius: 9999px;
+  background:
+    radial-gradient(circle at 35% 30%, #ffb4a9 0%, #ba0b0b 22%, #8d0707 70%),
+    #ba0b0b;
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.36),
+    0 0 36px rgba(186, 11, 11, 0.48);
+}
+
+.fitbot-status-dot {
+  border-radius: 9999px;
+  box-shadow: 0 0 0 4px rgba(18, 20, 20, 0.9);
+}
+
+.send-plane-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  fill: currentColor;
+  transform-origin: 50% 50%;
+}
+
+.fitbot-floating-panel {
+  filter: drop-shadow(0 22px 42px rgba(0, 0, 0, 0.34));
+}
+
+.fitbot-bubble {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.fitbot-bubble-ai {
+  border-radius: 18px 18px 18px 6px;
+  background: linear-gradient(180deg, rgba(51, 53, 53, 0.86), rgba(30, 32, 32, 0.9));
+  border-left: 2px solid #ba0b0b;
+}
+
+.fitbot-bubble-user {
+  border-radius: 18px 18px 6px 18px;
+  background: linear-gradient(135deg, #ba0b0b, #8f0707);
+  border-right: 2px solid rgba(255, 255, 255, 0.72);
+}
+
+.fitbot-bubble-error {
+  border-left-color: #ffb4ab;
+  background: rgba(147, 0, 10, 0.18);
+}
+
+.fitbot-alert,
+.fitbot-quick,
+.fitbot-input {
+  border-radius: 16px;
+}
+
+.fitbot-quick {
+  background: rgba(18, 20, 20, 0.42);
+}
+
+@media (max-width: 767px) {
+  body {
+    background:
+      radial-gradient(circle at 25% 5%, rgba(186, 11, 11, 0.12), transparent 20rem),
+      #121414;
+  }
+}
