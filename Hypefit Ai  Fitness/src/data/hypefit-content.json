@@ -1,0 +1,479 @@
+{
+  "chat": {
+    "initialMessages": [
+      {
+        "id": "welcome",
+        "role": "assistant",
+        "text": "Halo, saya FitBot. Saya bisa bantu susun workout, jadwal latihan, nutrisi, recovery, dan tracking progres Anda dengan pendekatan aman."
+      }
+    ],
+    "quickPrompts": [
+      "Buatkan jadwal latihan 4 hari untuk fat loss",
+      "Saya ingin tambah massa otot, mulai dari mana?",
+      "Berikan ide menu tinggi protein untuk hari ini"
+    ]
+  },
+  "auth": {
+    "demoCredentials": {
+      "email": "ahmmdaffa280904@gmail.com",
+      "password": "12345678"
+    }
+  },
+  "navigation": {
+    "items": [
+      { "id": "training", "label": "Training" },
+      { "id": "schedule", "label": "Schedule" },
+      { "id": "pricing", "label": "Pricing" },
+      { "id": "ai-coach", "label": "AI Coach" }
+    ]
+  },
+  "hero": {
+    "badge": "AI-POWERED PERFORMANCE",
+    "title": "EVOLUSI KEBUGARAN ANDA MULAI DI SINI",
+    "description": "Optimalkan setiap repetisi dengan analisis biometrik real-time. Pelatih AI kami menyesuaikan program latihan, nutrisi, dan recovery untuk target yang lebih terukur.",
+    "primaryCta": "Mulai Dengan FitBot",
+    "secondaryCta": "Lihat AI Coach",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDPOi6HnjV8qX7kkkeI8kS9Kby1_Ol72XhFitTrusFofTx7-41ija4zVZ4iVedxPDdW8S5wSIEx-BiNEh4lKy70M1R46dFNLQGN0TwGilgcj3Jw0dg4KUWWwLBF81GgPj7yNgdy02IB3UbswdpoWzK1K1sFqqFvLSlSn87DYBMxyRyHDQcaTnQNVhJKmPSZov7CbRxVk74kpKl25jgQ1PCuxzSy1QtRJbXIgnZ2syQtOx73aX--768cvsad9CcGKCwJ4CRd2QW7oFU",
+    "imageAlt": "Athlete training in a dark futuristic gym with red lighting",
+    "systemStatus": {
+      "title": "SYSTEM STATUS",
+      "line": "AI CORE: ONLINE",
+      "meta": "Active Members: 1,248"
+    }
+  },
+  "aiCoach": {
+    "title": "COACH AI: LEBIH DARI SEKADAR APLIKASI",
+    "features": [
+      {
+        "icon": "straighten",
+        "title": "FORM CORRECTION",
+        "body": "Analisis pola gerak untuk membantu menjaga teknik latihan tetap rapi dan mengurangi risiko cedera."
+      },
+      {
+        "icon": "restaurant",
+        "title": "BIO-NUTRITION",
+        "body": "Rencana makan dinamis berdasarkan target kalori, protein, jadwal latihan, dan preferensi harian."
+      },
+      {
+        "icon": "support_agent",
+        "title": "24/7 COGNITIVE SUPPORT",
+        "body": "Motivasi, strategi recovery, dan penyesuaian program saat energi atau jadwal Anda berubah."
+      },
+      {
+        "icon": "query_stats",
+        "title": "PREDICTIVE RESULTS",
+        "body": "Bantu membaca progres latihan dan memberi rekomendasi langkah berikutnya berdasarkan goal user."
+      }
+    ]
+  },
+  "schedule": {
+    "title": "JADWAL KELAS",
+    "description": "Pilih sesi yang dioptimalkan oleh kecerdasan buatan.",
+    "classCards": [
+      {
+        "tag": "AI-OPTIMIZED",
+        "title": "POWER YOGA",
+        "time": "MON - 08:00 AM",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAvI0MDl46SM4hEwrkquBXJ-tZwZDUYYkVk4c7Biu7lHaW6kkwGzn0VrYsQX2It4BEGapdxJLWfGDaXDeZLEYKJsW6sIK51yx5JjjmRvaT91AzlcyIiKG6wTOjuWBC6rmYZbtDyHDwbbeME_PIlZeLfuIHfjB4NEeqKnbCTd6nTFLz7egm83-0YHASuaJsE2Yb8LNDf9EPnQIi1_ZZIUAGzseDgm9JK_E1ymqci4hMqJmKVKpUwRDTbVp61AG3vjrrssGKBdP-LxdI"
+      },
+      {
+        "tag": "LIVE SESSION",
+        "title": "HIIT BLAST",
+        "time": "TUE - 06:30 PM",
+        "featured": true,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKhgCVVjx5fR-z2z3c_Qp3UyQKLjC18ND7Qgg-w3ldsw_6D1qJNqfZOh1BFO5A1qqO8YlnZYmdSZWvkItXrdZrvehvffJmW6m08dpBkpIVhpjq2gZwrzYsuIOtK3MXkUX65cho6p8Z2XhyjLE1tEVbPf2vcq1tQMvGIm7XSajJ25aQgcELEtQrkuE4ZSNc-WXqN4DSwWClXeAZIUtMCAllxA8bLv7L4teXzjLYErm9T0MUnSOystnFoA_e28TrKyLCEtxTBC9IBZI"
+      },
+      {
+        "tag": "STRENGTH CORE",
+        "title": "AI STRENGTH",
+        "time": "THU - 05:00 PM",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDTBntL8Nq11apMchtZVvgmj6K8Wagj59sTABv56W-sl5ftaLZleHeRwVMTDzJFq7JJpwhJAev9u7i1na5sgiBpC7-Z4mYzLAPi0ijjPJPYxx9IyDH3_4lpL3QNl9UKJE2pN8NUUGyZ8rUNrA6mbRe9h2DVY9Q0c9kQi27zJ3n0b6CgGgmWgFoI2CQmsSUvFEh7AOkik4do3msl_TJx3KnaU7le8CUByHWRIt1OjCcy6pj37HfFO4UV6Zmq0X7WZb7WqTDD1HvlTT8"
+      }
+    ]
+  },
+  "humanMachine": {
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCVkGck9mh33369WrTUEvTALaxvinKqv7a3ClOE9g1O5InmBJfq9_KtHIYbn4KDPk-ZmHo6szOhxCVvQJ6nj3UIOTa0wyybAjnhemCAtZFl4PcSmCX2fcATzTFP1PhgFT4sy0qGahdAwI1Li_zMbGBHPy-JgK0wbgdTXJ5CoxXNqK5qHN2cm3c6I57s2Vlys7AiHfd-f-aWEMHPeNfiPjNF-lhsi-xqxW9vOUHa9U673X7QF9j4_6dfKP0tedTNhhgwvlGLH_Ebo5I",
+    "imageAlt": "Fitness trainer reviewing digital performance metrics",
+    "coachName": "MARCUS VANE",
+    "coachRole": "ELITE PERFORMANCE COACH",
+    "title": "DUET MANUSIA & MESIN",
+    "description": "Trainer menginterpretasikan data AI untuk memberi sentuhan manusiawi pada perjalanan kebugaran. Motivasi, empati, dan keahlian teknis berpadu dengan presisi algoritma.",
+    "points": [
+      {
+        "title": "STRATEGI PEMULIHAN PERSONAL",
+        "body": "Optimalkan waktu istirahat berdasarkan pola latihan dan energi harian."
+      },
+      {
+        "title": "KOREKSI POSTUR DINAMIS",
+        "body": "Bimbingan teknik yang mendukung latihan lebih efisien dan konsisten."
+      }
+    ],
+    "cta": "Jadwalkan Konsultasi"
+  },
+  "pricing": {
+    "title": "PILIH PAKET PERFORMA ANDA",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly save 20%"
+    },
+    "popularLabel": "Most Popular",
+    "plans": [
+      {
+        "id": "lite",
+        "title": "LITE",
+        "price": "Rp 499k",
+        "period": "bulan",
+        "features": [
+          "AI workout starter",
+          "Weekly progress recap",
+          "Basic nutrition prompts"
+        ]
+      },
+      {
+        "id": "pro",
+        "title": "PRO",
+        "price": "Rp 899k",
+        "period": "bulan",
+        "featured": true,
+        "features": [
+          "Unlimited FitBot chat",
+          "Adaptive workout schedule",
+          "Nutrition and recovery planner",
+          "Progress analysis"
+        ]
+      },
+      {
+        "id": "elite",
+        "title": "ELITE",
+        "price": "Rp 1.5M",
+        "period": "bulan",
+        "features": [
+          "Coach review layer",
+          "Advanced biometric notes",
+          "Priority plan adjustment"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "brand": "HYPERION AI",
+    "description": "Masa depan kebugaran adalah personal, data-driven, dan didukung AI.",
+    "socialIcons": ["share", "public"],
+    "columns": [
+      {
+        "title": "TAUTAN CEPAT",
+        "links": ["Training", "AI Coach", "Schedule", "Location Finder"]
+      },
+      {
+        "title": "SUPPORT",
+        "links": ["Privacy Policy", "Terms of Service", "Support Center", "FAQ"]
+      }
+    ],
+    "newsletter": {
+      "title": "NEWSLETTER",
+      "body": "Dapatkan update teknologi kebugaran terbaru.",
+      "placeholder": "Email Anda",
+      "button": "JOIN"
+    },
+    "copyright": "2026 HYPERION AI FITNESS. ENGINEERED FOR PERFORMANCE.",
+    "locations": ["Jakarta", "Singapore", "Tokyo"]
+  },
+  "login": {
+    "backgroundImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuCVkGck9mh33369WrTUEvTALaxvinKqv7a3ClOE9g1O5InmBJfq9_KtHIYbn4KDPk-ZmHo6szOhxCVvQJ6nj3UIOTa0wyybAjnhemCAtZFl4PcSmCX2fcATzTFP1PhgFT4sy0qGahdAwI1Li_zMbGBHPy-JgK0wbgdTXJ5CoxXNqK5qHN2cm3c6I57s2Vlys7AiHfd-f-aWEMHPeNfiPjNF-lhsi-xqxW9vOUHa9U673X7QF9j4_6dfKP0tedTNhhgwvlGLH_Ebo5I",
+    "backgroundAlt": "Hyperion athlete access background",
+    "badge": "Secure Athlete Access",
+    "title": "MASUK KE HYPERION FIT",
+    "description": "Akses dashboard latihan, rencana nutrisi, progres performa, dan sesi AI coaching personal dalam satu ruang premium.",
+    "metrics": [
+      { "metric": "AI", "label": "Coach Online" },
+      { "metric": "24/7", "label": "Progress Sync" },
+      { "metric": "PRO", "label": "Training Hub" }
+    ],
+    "formEyebrow": "Member Login",
+    "formTitle": "ATHLETE PORTAL",
+    "backLabel": "Kembali ke Join Now"
+  },
+  "enrollment": {
+    "backLabel": "Kembali",
+    "selectedPlanPrefix": "Selected Plan:",
+    "title": "Athlete Enrollment",
+    "subtitle": "Secure system initialization // bio-data entry",
+    "fields": [
+      { "label": "Athlete Name", "placeholder": "ENTER FULL LEGAL NAME", "type": "text" },
+      { "label": "System Email", "placeholder": "ENCRYPTED ADDRESS", "type": "email" },
+      { "label": "Comm Link / WA", "placeholder": "+62 MOBILE ACCESS CODE", "type": "tel" }
+    ],
+    "ageField": {
+      "label": "Biological Age",
+      "placeholder": "Year",
+      "min": "13"
+    },
+    "bodyFields": [
+      { "label": "Mass / KG", "placeholder": "Weight", "min": "25" },
+      { "label": "Stature / CM", "placeholder": "Height", "min": "100" }
+    ],
+    "consent": "I consent to AI-driven biometric analysis and performance tracking protocols. Data is stored on secure Hyperion cluster.",
+    "submitLabel": "Submit Data",
+    "footerMeta": ["System_v.4.2.1", "Encryption: AES-256-GCM", "Hyperion_core_link: Active"]
+  },
+  "enrollmentSuccess": {
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCVkGck9mh33369WrTUEvTALaxvinKqv7a3ClOE9g1O5InmBJfq9_KtHIYbn4KDPk-ZmHo6szOhxCVvQJ6nj3UIOTa0wyybAjnhemCAtZFl4PcSmCX2fcATzTFP1PhgFT4sy0qGahdAwI1Li_zMbGBHPy-JgK0wbgdTXJ5CoxXNqK5qHN2cm3c6I57s2Vlys7AiHfd-f-aWEMHPeNfiPjNF-lhsi-xqxW9vOUHa9U673X7QF9j4_6dfKP0tedTNhhgwvlGLH_Ebo5I",
+    "imageAlt": "Hyperion athlete",
+    "eyebrow": "Hyperion Fit // AI Performance",
+    "title": "Pendaftaran Atlet Berhasil",
+    "messagePrefix": "Terima kasih atas kepercayaan Anda bergabung dengan",
+    "messageBrand": "HYPERION FIT",
+    "messageSuffix": "telah kami terima dengan aman melalui sistem enkripsi kami. Tim administrasi akan segera menghubungi Anda melalui detail kontak yang diberikan.",
+    "meta": ["Encrypted_secure", "Response_eta: 24h"],
+    "primaryButton": "Kembali Ke Beranda",
+    "secondaryButton": "Cetak Bukti Pendaftaran"
+  },
+  "dashboard": {
+    "navItems": [
+      { "id": "dashboard", "icon": "dashboard", "label": "Dashboard" },
+      { "id": "training", "icon": "fitness_center", "label": "Training" },
+      { "id": "nutrition", "icon": "restaurant", "label": "Nutrition" },
+      { "id": "settings", "icon": "settings", "label": "Settings" }
+    ],
+    "sidebar": {
+      "brand": "HYPERION FIT",
+      "subtitle": "AI PERFORMANCE",
+      "memberEyebrow": "Elite Member",
+      "memberName": "Alex Thorne",
+      "upgradeLabel": "Upgrade To Pro",
+      "logoutLabel": "Logout"
+    },
+    "topbar": {
+      "mobileBrand": "HYPERION FIT",
+      "avatarImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdKvq4kxKeQaViJkOuYJvvyxQyvvu2gB1AkHs9mqdZCnwIFyBFNkUGhRVcR1Dne6Jgh1eCKhc_8wPNYLtnVLmVSG-97Znql9CPsPKuOMu6dVVW0nYnh6HAAfv98hOPstG2ZccL0b2CkFJDKnvWBQuy1MKhjMei-zMkLpW_l_uPdH9TbYtEDOGuRVUE3y4ajL5yS1iCjj_PuTl4Z0Kfx8BQtt_1ulI3KXyqhLA_PV3sKvZHqMydFqRCBr3UtSYwfhu-_rdXqnq1ZgY",
+      "avatarAlt": "Member avatar"
+    },
+    "overview": {
+      "badge": "Member Dashboard",
+      "title": "WELCOME BACK, ATHLETE",
+      "description": "Ringkasan latihan, nutrisi, recovery, dan rekomendasi AI untuk performa hari ini.",
+      "cta": "Ask FitBot",
+      "cards": [
+        { "title": "Training Load", "value": "84%", "meta": "+12% dibanding minggu lalu", "icon": "monitoring" },
+        { "title": "Calories Burned", "value": "2,480", "meta": "Target harian 3,000 kcal", "icon": "local_fire_department", "tone": "red" },
+        { "title": "Recovery Score", "value": "72", "meta": "Tidur 7j 10m, HRV stabil", "icon": "bolt" },
+        { "title": "Protein Intake", "value": "118g", "meta": "Sisa 32g dari target", "icon": "restaurant", "tone": "red" }
+      ],
+      "performance": {
+        "eyebrow": "AI Weekly Performance",
+        "title": "Progress Output",
+        "dateRange": "May 31 - Jun 6",
+        "bars": [46, 72, 58, 86, 68, 94, 78],
+        "days": ["M", "T", "W", "T", "F", "S", "S"],
+        "summary": [
+          { "label": "Consistency", "value": "6/7 sessions" },
+          { "label": "Strength PR", "value": "+8.4 kg" },
+          { "label": "AI Focus", "value": "Lower body power" }
+        ]
+      },
+      "insight": {
+        "eyebrow": "FitBot Insight",
+        "status": "Adaptive recommendation",
+        "body": "Beban latihan tinggi tetapi recovery masih aman. Hari ini prioritaskan compound lift intensitas sedang, lalu akhiri dengan mobility 12 menit.",
+        "focus": "Fokus: squat pattern, posterior chain, dan protein 30g dalam 2 jam setelah latihan.",
+        "button": "Tanya Rencana Detail"
+      }
+    }
+  },
+  "training": {
+    "header": {
+      "badge": "Live Session Active",
+      "title": "Workout Hub",
+      "description": "Optimizing performance with real-time biometric feedback.",
+      "metrics": [
+        { "label": "Daily Goal", "value": "84%" },
+        { "label": "Heart Rate", "value": "132 BPM" }
+      ]
+    },
+    "currentSet": {
+      "title": "Current Set",
+      "repsRemaining": "Reps Remaining: 4",
+      "stats": [
+        { "label": "Reps", "value": "08" },
+        { "label": "Weight", "value": "225", "unit": "LB" }
+      ],
+      "restLabel": "Rest Timer",
+      "restTime": "00:30",
+      "restSegments": [100, 100, 55, 35],
+      "primaryButton": "Log Set",
+      "secondaryButton": "Skip Rest"
+    },
+    "performance": {
+      "title": "Performance Metrics",
+      "label": "Volume Lifted Weekly",
+      "value": "42.5k",
+      "unit": "LBS",
+      "bars": [42, 62, 88, 58, 72, 98, 28]
+    },
+    "history": {
+      "title": "History",
+      "days": ["28", "29", "30", "1", "2", "3", "4"],
+      "activeDay": "3",
+      "lastSession": "Last Session: Upper Body Hypertrophy - 72m"
+    },
+    "library": {
+      "title": "Exercise Library",
+      "filters": ["All", "Chest", "Back", "Legs", "Arms"],
+      "exercises": [
+        {
+          "title": "Barbell Bench Press",
+          "tag": "Chest",
+          "body": "Compound movement untuk pectoral, anterior deltoid, dan triceps.",
+          "imageIndex": 2
+        },
+        {
+          "title": "Conventional Deadlift",
+          "tag": "Back",
+          "body": "Posterior chain exercise untuk spinal erectors, glutes, dan grip.",
+          "imageIndex": 1
+        },
+        {
+          "title": "Barbell Back Squat",
+          "tag": "Legs",
+          "body": "Primary lower body movement untuk quads, hamstrings, dan core stability.",
+          "imageIndex": 2
+        },
+        {
+          "title": "Weighted Pull Ups",
+          "tag": "Back",
+          "body": "Vertical pulling movement untuk lat dan biceps development.",
+          "imageIndex": 0
+        },
+        {
+          "title": "Dumbbell Shoulder Press",
+          "tag": "Arms",
+          "body": "Overhead pressing untuk deltoid isolation dan shoulder stability.",
+          "imageIndex": 1
+        }
+      ],
+      "startButton": "Start Exercise",
+      "suggested": {
+        "title": "AI Suggested",
+        "body": "FitBot menyarankan Face Pulls berdasarkan fatigue shoulder terakhir.",
+        "button": "Accept Recommendation"
+      }
+    }
+  },
+  "nutrition": {
+    "header": {
+      "eyebrow": "Nutrition Interface v4.2",
+      "title": "System Fueling",
+      "budgets": [
+        { "label": "Daily Budget", "value": "2,850", "unit": "KCAL" },
+        { "label": "Remaining", "value": "1,120", "unit": "KCAL", "tone": "primary" }
+      ]
+    },
+    "macros": {
+      "title": "Macro Distribution",
+      "items": [
+        { "label": "Protein", "value": "142g", "target": "180g", "percent": 78 },
+        { "label": "Carbs", "value": "210g", "target": "320g", "percent": 65 },
+        { "label": "Fats", "value": "45g", "target": "85g", "percent": 53 }
+      ]
+    },
+    "dietPlanGenerator": {
+      "defaults": {
+        "goal": "Fat loss dengan energi stabil untuk latihan 4x seminggu",
+        "preferences": "Tinggi protein, makanan Indonesia, mudah dimasak, rendah gula",
+        "restrictions": "Tidak ada alergi. Hindari gorengan berlebihan.",
+        "calorieTarget": "2200",
+        "mealCount": "4"
+      },
+      "badges": ["Goal-aware", "Calorie guided", "Preference based", "Safety note"]
+    },
+    "meals": [
+      {
+        "meal": "Breakfast",
+        "kcal": "640 KCAL",
+        "icon": "wb_sunny",
+        "entries": [
+          { "name": "Greek Yogurt w/ Chia & Blueberries", "kcal": "320 KCAL" },
+          { "name": "Whey Isolate Shake (Vanilla)", "kcal": "210 KCAL" },
+          { "name": "Black Coffee", "kcal": "10 KCAL" }
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "kcal": "820 KCAL",
+        "icon": "wb_sunny",
+        "entries": [
+          { "name": "Wild Caught Salmon & Quinoa", "kcal": "320 KCAL" },
+          { "name": "Asparagus", "kcal": "210 KCAL" },
+          { "name": "Olive oil dressing", "kcal": "10 KCAL" }
+        ]
+      }
+    ],
+    "hydration": {
+      "title": "Hydration Level",
+      "value": "2.4",
+      "unit": "Liters / 3.5 Target",
+      "button": "+ 250ml Intake"
+    },
+    "scan": {
+      "title": "Scan Product",
+      "body": "Instant nutrient analysis"
+    },
+    "coachSuggestion": {
+      "title": "Hyperion Coach Suggestion",
+      "body": "High training volume detected. Recommended post-workout intake:",
+      "highlight": "45g carbs + 30g protein",
+      "button": "Tanya menu personal"
+    }
+  },
+  "settings": {
+    "header": {
+      "title": "System Configuration",
+      "description": "Optimize your athletic profile and neural coaching parameters for maximum performance output.",
+      "buttons": ["Export Logs", "Save Changes"]
+    },
+    "profile": {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdKvq4kxKeQaViJkOuYJvvyxQyvvu2gB1AkHs9mqdZCnwIFyBFNkUGhRVcR1Dne6Jgh1eCKhc_8wPNYLtnVLmVSG-97Znql9CPsPKuOMu6dVVW0nYnh6HAAfv98hOPstG2ZccL0b2CkFJDKnvWBQuy1MKhjMei-zMkLpW_l_uPdH9TbYtEDOGuRVUE3y4ajL5yS1iCjj_PuTl4Z0Kfx8BQtt_1ulI3KXyqhLA_PV3sKvZHqMydFqRCBr3UtSYwfhu-_rdXqnq1ZgY",
+      "imageAlt": "Athlete profile",
+      "identityLabel": "Athlete Identity",
+      "identityValue": "ahmad daffa",
+      "systemIdLabel": "System ID Immutable",
+      "systemId": "HYP-8849-B2",
+      "sportLabel": "Primary Sport",
+      "sports": [
+        { "value": "hyrox", "label": "Hyrox Pro" },
+        { "value": "strength", "label": "Strength" },
+        { "value": "hiit", "label": "HIIT" }
+      ],
+      "syncLabel": "Biometric Sync Status",
+      "syncStatus": "Whoop V4 Connected Active"
+    },
+    "membership": {
+      "title": "Membership",
+      "status": "Pro Status",
+      "body": "Elite tier access enabled. AI Coach provides 24/7 neural adaptations.",
+      "progress": 65,
+      "button": "Manage Subscription"
+    },
+    "security": {
+      "title": "Security",
+      "items": [
+        { "title": "OAuth Integrations", "body": "Connected: Google, Apple Health", "action": "Manage" },
+        { "title": "Two-Factor Authentication", "body": "Enhanced security via biometrics", "action": "Secured" },
+        { "title": "Reset System Password", "body": "Credential refresh required every 90 days", "action": "Reset" }
+      ]
+    },
+    "alerts": {
+      "title": "Neural Alerts",
+      "items": [
+        { "label": "AI Coaching Real-time Adjustments", "enabled": true },
+        { "label": "Weekly Performance Diagnostics", "enabled": true },
+        { "label": "Community & Leaderboard Updates", "enabled": false }
+      ]
+    },
+    "danger": {
+      "title": "Critical: Decommission Athlete Profile",
+      "body": "This will permanently purge all AI training logs and biometric history from the Hyperion database.",
+      "button": "Deactivate Account"
+    }
+  }
+}
